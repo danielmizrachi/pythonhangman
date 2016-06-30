@@ -1,14 +1,28 @@
+"""
+
+*** Python Hangman ***
+
+* Author: Daniel Mizrachi
+* Date Written: 2016-06-29
+* Purpose: A basic text based hangman game written in Python
+* Platform Compatibility: All machines capable of running any version of Python 3
+* Updated and pushed to Git: 2016-06-30
+
+"""
+
 import random
 import rawinput
 
 # Define functions
 def getContentsAsList(filename, delimiter):
+    # Open a file, read it and split it into a list using the specified delimiter, then return this list
     f = open(filename)
     fileList = f.read().split(delimiter)
     f.close()
     return fileList
 def printList(lst, delimiter=" ", end="\n"):
     if type(lst) == list and type(delimiter) == str:
+        # Join the list into a string using the specified delimiter and print the result
         print(delimiter.join(lst), end=end)
     else:
         raise SyntaxError("printList requires a list and string object.")
@@ -18,8 +32,8 @@ final = []
 points = roundNum = 0
 
 # Prompt them to choose whether to play the game or view the help until they enter a valid command
-cmd = input("Welcome. Would you like to:\n1) Play the game\n2) View the help\nSelect an option by entering its number: ")
-while cmd != "1" and cmd != "2":
+cmd = input("Welcome. Would you like to:\n1) Play the game\n2) View the help\n3) View the manual\nSelect an option by entering its number: ")
+while cmd != "1" and cmd != "2" and cmd != "3":
     cmd = input("Error: You didn't enter a valid option number. Would you like to:\n1) Play the game\n2) View the help")
 
 if cmd == "1":
@@ -93,7 +107,14 @@ if cmd == "1":
 
     print("\n--- GAME OVER ---\n")
 
-else:
+elif cmd == "2":
+    # Print the contents of the help file
     helpFile = open("help.txt")
     print("\n" + helpFile.read())
     helpFile.close()
+
+else:
+    # Print the contents of the manual file
+    manual = open("manual.txt")
+    print("\n" + manual.read())
+    manual.close()

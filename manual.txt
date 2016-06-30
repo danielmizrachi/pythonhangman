@@ -1,0 +1,21 @@
+--- Hangman Manual ---
+
+This is a basic user manual for the hangman game. For help playing the game, please select the help section.
+
+Limitations of the game are as follows:
+
+* You may only enter letters, upper or lowercase (it makes no difference), as guesses. Numbers, symbols, and any other special characters will be rejected. If you enter any invalid characters, you will be prompted to re enter your input until you are successful.
+
+* There are no graphics to the game, it is merely text based. This means that it will run on any computer that can compile Python 3 code, as it is a low power application, however, it may be deemed less interative or fun due because of the lack of images.
+
+* The game is compatible with any system, and will run in any Python 3 compiler in any environment, provided it supports simple opening and reading from text files (writing is not necessary) and that the required text files under the required names are available.
+
+* The game has the following dependencies: the standard Python random module, the custom rawinput module, a dictionary.txt file, validly populated (see next point), a help.txt file and this manual.txt file. All these files are provided with this package, but they may be edited if necessary (particularly the dictionary, as this is user defined).
+
+* The game comes with 52 words preloaded, ranging in difficulty to guess. The dictionary can be populated with as many words (preferably nouns, as defined in the help file) as required. Words in the dictionary must be written in UPPERCASE, on separate lines, with one word per line. Extra blank lines between words, lowercase letters, spaces, tab characters, numbers, special characters or anything other than capital letters or line breaks in the dictionary may cause the program to malfunction or produce unexpected results. This means that there must not be any extra blank lines at the bottom of the dictionary, as each one will increase the chances of receiving a blank word in game.
+
+* The words preloaded into the dictionary are all nouns and contain no explicit language. This means that the default game is suitable for anyone of any age.
+
+* A dictionary containing more than about 1,000 words may begin to slow execution in game. If many words are required, simply dedicate more memory to the Python process.
+
+Restart this program and select option 1 to start the game.
