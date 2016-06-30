@@ -1,0 +1,13 @@
+--- Hangman Help ---
+
+How to play:
+
+The aim of the game is to guess a randomly selected word without losing all your points. All the possible words are nouns. The number of points you get for a game is the same as the length of the chosen word.
+
+In each round, enter either a letter you wish to guess, or a whole word. If you enter a letter that's inside the actual word, then you can see where this letter lies (it may appear twice, in which case, lucky you!) However, if the word does not contain your entered letter, then you lose a point. If you enter the final word in one go, you win instantly. However, if you enter more than one letter and it is not the final word, then you lose.
+
+This process repeats until you are out of points.
+
+Good luck and have fun!
+
+Restart this program and select option 1 to start the game.
