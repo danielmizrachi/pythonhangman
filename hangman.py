@@ -34,7 +34,7 @@ points = roundNum = 0
 # Prompt them to choose whether to play the game or view the help until they enter a valid command
 cmd = input("Welcome. Would you like to:\n1) Play the game\n2) View the help\n3) View the manual\nSelect an option by entering its number: ")
 while cmd != "1" and cmd != "2" and cmd != "3":
-    cmd = input("Error: You didn't enter a valid option number. Would you like to:\n1) Play the game\n2) View the help")
+    cmd = input("Error: You didn't enter a valid option number. Would you like to:\n1) Play the game\n2) View the help\n3) View the manual\nPlease enter an option: ")
 
 if cmd == "1":
     print("\n--- NEW GAME ---\n")
